@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #161616;
+  --orange: #ff7716;
+  --white: #fff;
+  --blue: #2196f3;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: var(--background);
+}
+
+/* PROFILE-SECTION */
+header {
+  display: flex;
+
+  justify-content: center;
+
+  margin: auto;
+
+  background: #101010;
+}
+
+.profile-image {
+  width: 220px;
+
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+
+  border: 5px solid var(--white);
+  border-radius: 50%;
+}
+
+.profile-image:hover {
+  border: 5px solid var(--orange);
+
+  transition: 0.3s;
+}
+
+.title {
+  margin-top: 50px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 2.2rem;
+
+  color: var(--white);
+
+  text-transform: uppercase;
+}
+
+.title h3 {
+  font-size: 1.5rem;
+
+  color: var(--orange);
+
+  text-transform: uppercase;
+}
+
+.social {
+  margin-top: 10px;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.social-links {
+  font-size: 50px;
+
+  color: var(--white);
+
+  margin: 15px;
+}
+
+/* SKILLS SECTION */
+.skills {
+  margin: 40px auto;
+
+  border-bottom: 2px solid #101010;
+
+  width: 80%;
+}
+
+.skills-image {
+  width: 100px;
+}
+
+.skills-image_react {
+  width: 150px;
+}
+
+.knowledge,
+.interests {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 110px auto;
+}
+
+.knowledge h2,
+.interests h2 {
+  margin-right: 20px;
+
+  color: var(--white);
+}
+
+.knowledge .skills-image,
+.interests .skills-image {
+  margin: 20px;
+}
+
+/* ABOUT ME SECTION */
+.about-container {
+  width: 70%;
+
+  margin: 40px auto;
+}
+
+.about-text h1 {
+  color: var(--orange);
+
+  font-size: 2.3rem;
+
+  margin-bottom: 40px;
+}
+
+.about-text p {
+  margin: auto;
+
+  color: var(--white);
+
+  font-size: 1.1rem;
+
+  padding-bottom: 25px;
+}
+
+.about-text p span {
+  color: var(--blue);
+}
+
+.about-text p span:hover {
+  color: #008eff;
+}
+
+footer {
+  background: #101010;
+
+  display: flex;
+
+  height: 50px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--orange);
+}
