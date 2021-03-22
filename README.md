@@ -8,9 +8,10 @@
 
 ## 🧾 Sobre
 
-Um site bem simples criado com o intuito de mostrar um pouco sobre quem eu sou, meus atuais conhecimentos e meus interesses de aprendizado.
+Um site bem simples criado com o intuito de mostrar um pouco sobre quem sou eu, meus atuais conhecimentos e meus interesses de aprendizado.
 
 ## 💻 Tecnologias utilizadas
 
-- HTML 
+- HTML
 - CSS
+- JavaScript

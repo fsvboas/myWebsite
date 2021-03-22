@@ -7,10 +7,21 @@
 }
 
 :root {
+  --main-color: #5965e0;
+  --background: #eaedef;
+  --text: #000;
+  --green: #4cd62b;
+  --border: #fff;
+  --switch: #eaedef;
+}
+
+.dark-mode {
+  --main-color: #101010;
   --background: #161616;
-  --orange: #ff7716;
-  --white: #fff;
-  --blue: #2196f3;
+  --text: #fff;
+  --green: #4cd62b;
+  --border: #101010;
+  --switch: #202020;
 }
 
 body {
@@ -19,83 +30,157 @@ body {
   background: var(--background);
 }
 
-/* PROFILE-SECTION */
 header {
   display: flex;
 
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 
-  margin: auto;
+  padding: 10px 20px;
 
-  background: #101010;
+  margin: 0 auto;
+
+  background: var(--main-color);
 }
 
-.profile-image {
-  width: 220px;
+.logo a {
+  font-size: 2rem;
 
-  margin-top: 30px;
-  margin-right: 50px;
-  margin-bottom: 30px;
+  color: #fff;
 
-  border: 5px solid var(--white);
+  text-decoration: none;
+}
+
+/* SWITCH */
+.change-theme {
+  margin-left: 20px;
+}
+
+.checkbox {
+  opacity: 0;
+
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+
+  background-color: var(--switch);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  padding: 5px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+
+  background-color: #fff;
+
+  position: absolute;
+
+  top: 2px;
+  left: 2px;
+
+  border-radius: 50%;
+
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+/* PROFILE-SECTION */
+.resume {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.resume img {
+  width: 250px;
+  border: 5px solid var(--border);
   border-radius: 50%;
 }
 
-.profile-image:hover {
-  border: 5px solid var(--orange);
-
-  transition: 0.3s;
+.resume-text {
+  margin-left: 50px;
 }
 
-.title {
-  margin-top: 50px;
+.resume-text h1 {
+  font-size: 3rem;
 
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
+  color: var(--green);
 }
 
-.title h1 {
-  font-size: 2.2rem;
-
-  color: var(--white);
-
-  text-transform: uppercase;
-}
-
-.title h3 {
+.resume-text p {
   font-size: 1.5rem;
 
-  color: var(--orange);
+  max-width: 400px;
 
-  text-transform: uppercase;
+  color: var(--text);
 }
 
-.social {
-  margin-top: 10px;
-
+.links {
   display: flex;
 
-  justify-content: center;
+  align-items: center;
+
+  margin: 10px auto;
 }
 
 .social-links {
-  font-size: 50px;
+  font-size: 40px;
+}
 
-  color: var(--white);
+.social-links:nth-child(1) {
+  margin-right: 20px;
+}
 
-  margin: 15px;
+.fa-github {
+  color: var(--text);
+}
+
+.fa-linkedin {
+  color: #0a66c2;
 }
 
 /* SKILLS SECTION */
 .skills {
   margin: 40px auto;
 
-  border-bottom: 2px solid #101010;
+  border-bottom: 1px solid var(--border);
 
-  width: 80%;
+  max-width: 1200px;
 }
 
 .skills-image {
@@ -113,40 +198,42 @@ header {
   align-items: center;
   justify-content: center;
 
-  margin: 110px auto;
+  margin: 80px auto;
 }
 
 .knowledge h2,
 .interests h2 {
   margin-right: 20px;
 
-  color: var(--white);
+  color: var(--text);
 }
 
 .knowledge .skills-image,
 .interests .skills-image {
-  margin: 20px;
+  margin: 15px;
 }
 
 /* ABOUT ME SECTION */
 .about-container {
-  width: 70%;
+  width: 80%;
 
   margin: 40px auto;
+
+  max-width: 1200px;
 }
 
 .about-text h1 {
-  color: var(--orange);
+  color: var(--green);
 
   font-size: 2.3rem;
 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .about-text p {
-  margin: auto;
+  margin: 0 auto;
 
-  color: var(--white);
+  color: var(--text);
 
   font-size: 1.1rem;
 
@@ -154,15 +241,13 @@ header {
 }
 
 .about-text p span {
-  color: var(--blue);
-}
+  color: var(--green);
 
-.about-text p span:hover {
-  color: #008eff;
+  text-decoration: underline;
 }
 
 footer {
-  background: #101010;
+  background: var(--main-color);
 
   display: flex;
 
@@ -173,5 +258,5 @@ footer {
 }
 
 footer p {
-  color: var(--orange);
+  color: #fff;
 }
