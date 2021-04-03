@@ -5,11 +5,9 @@
     margin: 40px auto;
   }
 
-  .skills {
-    max-width: 800px;
-  }
-
-  .about-container {
+  .skills,
+  .about-container,
+  .projects-container {
     max-width: 800px;
   }
 }

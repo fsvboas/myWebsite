@@ -17,40 +17,46 @@
 </head>
 
 <body>
-    <!-- PROFILE SECTION -->
     <header>
-        <div class="logo">
-            <a href="#">&lt;fsvboas/&gt;</a>
-        </div>
+        <a class="logo" href="#">&lt;fsvboas/&gt;</a>
 
-        <div class="change-theme">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-            </label>
-        </div>
-        </div>
+        <div class="right-side">
+            <nav>
+                <a id="home-page" href="#home" class="highlight">Início</a>
+                <a id="about" href="#about-me">Sobre mim</a>
+                <a id="portfolio" href="#my-projects">Portfólio</a>
+            </nav>
 
+            <div class="change-theme">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
     </header>
 
-    <div class="resume">
-        <img src="assets/me.png" alt="">
-        <div class="resume-text">
-            <h1>Olá!</h1>
-            <p>Me chamo Felippe, tenho 19 anos e sou desenvolvedor front-end.</p>
-            <section class="links">
-                <a href="https://github.com/fsvboas" target="_blank" class="social-links"><i
-                        class="fab fa-github social-ico"></i></a>
-                <a href="https://www.linkedin.com/in/fsvboas/" target="_blank" class="social-links"><i
-                        class="fab fa-linkedin"></i></a>
-            </section>
+    <!-- PROFILE SECTION -->
+    <section id="home">
+        <div class="resume">
+            <img src="assets/me.png" alt="">
+            <div class="resume-text">
+                <h1>Olá!</h1>
+                <p>Me chamo Felippe, tenho 19 anos e sou desenvolvedor front-end.</p>
+                <section class="links">
+                    <a href="https://github.com/fsvboas" target="_blank" class="social-links"><i
+                            class="fab fa-github social-ico"></i></a>
+                    <a href="https://www.linkedin.com/in/fsvboas/" target="_blank" class="social-links"><i
+                            class="fab fa-linkedin"></i></a>
+                </section>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- SKILLS SECTION -->
-    <div class="skills">
+    <section class="skills">
         <div class="knowledge">
             <h2>Conhecimentos:</h2>
             <img class="skills-image" src="assets/skills/html5.svg" alt="HTML5">
@@ -65,49 +71,96 @@
             <img class="skills-image" src="assets/skills/typescript.svg" alt="TypeScript">
             <img class="skills-image" src="assets/skills/redux.svg" alt="Redux">
         </div>
-    </div>
+    </section>
 
     <!-- ABOUT ME SECTION -->
-    <div class="about-container">
-        <div class="about-text">
-            <h1>Sobre mim</h1>
+    <section id="about-me">
+        <div class="about-container">
+            <div class="about-text">
+                <h1 class="title">Sobre mim</h1>
 
-            <p>
-                Me chamo Felippe dos Santos Vilas Boas, tenho 19 anos e estou no
-                terceiro semestre do curso de Análise e Desenvolvimento de Sistemas
-                pela universidade Anhembi Morumbi.
-            </p>
-            <p>
-                Atualmente, possuo conhecimentos de nível intermediário em HTML5, CSS3 e JavaScript. Também tenho
-                algumas noções de Bootstrap e
-                possuo
-                uma grande vontade de aprender e me especializar em React.
-                Estou em busca de oportunidades para ingressar no mercado e ter minha primeira experiência
-                profissional
-                como
-                desenvolvedor web front-end a fim de cumprir os desafios propostos e me desenvolver não só
-                profissionalmente, mas pessoalmente também.
+                <p>
+                    Me chamo Felippe dos Santos Vilas Boas, tenho 19 anos e estou no
+                    terceiro semestre do curso de Análise e Desenvolvimento de Sistemas
+                    pela universidade Anhembi Morumbi.
+                </p>
+                <p>
+                    Atualmente, possuo conhecimentos de nível intermediário em HTML5, CSS3 e JavaScript. Também tenho
+                    algumas noções de Bootstrap e
+                    possuo
+                    uma grande vontade de aprender e me especializar em React.
+                    Estou em busca de oportunidades para ingressar no mercado e ter minha primeira experiência
+                    profissional
+                    como
+                    desenvolvedor web front-end a fim de cumprir os desafios propostos e me desenvolver não só
+                    profissionalmente, mas pessoalmente também.
 
-            </p>
-            <p>
-                Sou uma pessoa mais reservada, mas quando me adequo ao ambiente demonstro gostar bastante de
-                trabalhar em
-                grupo compartilhando opiniões, experiências e conhecimentos a fim de
-                sempre entregar os projetos com o melhor resultado possível.
-            </p>
-            <p>
-                Meu objetivo é ser um profissional exemplar, com conhecimentos sólidos
-                nas tecnologias mais famosas do mercado atual e com capacidade de desenvolver os
-                melhores sites e interfaces utilizando-as. Além disso, também almejo ser um profissional capaz de
-                lidar
-                com problemas que vierem a surgir da melhor maneira possível.
-            </p>
-            <p>
-                Você pode entrar em contato comigo pelo LinkedIn ou se preferir, pelo meu e-mail:
-                <span>felippesantosvb@hotmail.com</span>.
-            </p>
+                </p>
+                <p>
+                    Sou uma pessoa mais reservada, mas quando me adequo ao ambiente demonstro gostar bastante de
+                    trabalhar em
+                    grupo compartilhando opiniões, experiências e conhecimentos a fim de
+                    sempre entregar os projetos com o melhor resultado possível.
+                </p>
+                <p>
+                    Meu objetivo é ser um profissional exemplar, com conhecimentos sólidos
+                    nas tecnologias mais famosas do mercado atual e com capacidade de desenvolver os
+                    melhores sites e interfaces utilizando-as. Além disso, também almejo ser um profissional capaz de
+                    lidar
+                    com problemas que vierem a surgir da melhor maneira possível.
+                </p>
+                <p>
+                    Você pode entrar em contato comigo pelo LinkedIn ou se preferir, pelo meu e-mail:
+                    <span>felippesantosvb@hotmail.com</span>.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- MY PROJECTS SECTION -->
+    <section id="my-projects">
+        <div class="projects-container">
+            <div class="section-title">
+                <h1 class="title">Meus projetos</h1>
+            </div>
+
+            <div class="my-projects">
+                <div class="project-card">
+                    <div class="title-container">
+                        <h2 class="project-title">dev.finances</h2>
+                    </div>
+
+                    <div class="project-info">
+                        <img class="project-image" src="assets/projects/dev.finances.png" alt="dev.finances">
+                        <p class="project-resume"><strong>dev.finance$</strong> é uma aplicação de controle financeiro,
+                            onde
+                            é possível
+                            cadastrar
+                            ou excluir transações e visualizar o resultado das mesmas instantaneamente.</p>
+
+                        <div class="used-techs">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                        </div>
+
+
+                        <div class="buttons">
+                            <!-- <button><a href="#" class="website-button" target="_blank"><i
+                                    class="fas fa-window-maximize button-icon"></i>Site</a></button> -->
+                            <button><a href="#" class="code-button" target="_blank"><i
+                                        class="fab fa-github button-icon"></i>Código</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="more-projects">
+                <small><a href="https://github.com/fsvboas?tab=repositories" target="_blank">Você pode conferir todos os
+                        meus projetos clicando aqui!</a></small>
+            </div>
+    </section>
 
     <footer>
         <p>fsvboas - 2021</p>
