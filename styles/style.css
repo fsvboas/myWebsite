@@ -79,17 +79,51 @@ header {
   color: var(--white);
 }
 
-/* RIGHT SIDE HEADER*/
-.right-side {
+/* MENU */
+.menu {
   display: flex;
 
   align-items: center;
 }
 
-.right-side a {
+nav .menu-links {
+  display: flex;
+
+  list-style: none;
+}
+
+nav .menu-links li a {
   margin: 10px;
 
   padding: 5px;
+
+  text-transform: uppercase;
+}
+
+.open-menu {
+  background-color: transparent;
+
+  border: none;
+
+  outline: none;
+
+  color: var(--white);
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  display: none;
+}
+
+nav .menu-links .close-menu {
+  font-size: 2rem;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  display: none;
 }
 
 .highlight {

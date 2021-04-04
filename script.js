@@ -40,11 +40,34 @@ const highlightMenu = () => {
 window.addEventListener("scroll", highlightMenu);
 window.addEventListener("click", highlightMenu);
 
+//Responsive Menu
+const menu = document.querySelector(".menu-links");
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+
+const Home = document.querySelector("#home-page");
+const aboutMe = document.querySelector("#about");
+const Projects = document.querySelector("#portfolio");
+
+function open() {
+    menu.style.display = "flex";
+    menu.style.top = "0";
+}
+
+function close() {
+    menu.style.top = "-100%";
+}
+
+openMenu.addEventListener("click", open);
+closeMenu.addEventListener("click", close);
+
+Home.addEventListener("click", close);
+aboutMe.addEventListener("click", close);
+Projects.addEventListener("click", close);
+
 //Project Cards
 const projectCards = document.querySelector("div.my-projects");
-
 const card = document.querySelector("div.project-card");
-
 const newCards = [
     {
         title: "dev.finances",
