@@ -8,6 +8,10 @@
 
 html {
   scroll-padding-top: 115px;
+
+  scroll-behavior: smooth;
+
+  font-size: 62.5%;
 }
 
 :root {
@@ -38,12 +42,15 @@ body {
   font-family: "Poppins", sans-serif;
 
   background: var(--background);
+
+  font-size: 1.6rem;
 }
 
 .title {
+  /* SECTION TITLES */
   color: var(--green);
 
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 
   margin-bottom: 25px;
 }
@@ -63,18 +70,21 @@ header {
   padding: 10px 20px;
 
   height: 75px;
+  width: 100%;
 
   margin: 0 auto;
 
   background: var(--main-color);
 
   position: fixed;
+
   top: 0;
-  width: 100%;
+
+  z-index: 1;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
 
   color: var(--white);
 }
@@ -98,6 +108,8 @@ nav .menu-links li a {
   padding: 5px;
 
   text-transform: uppercase;
+
+  font-size: 1.4rem;
 }
 
 .open-menu {
@@ -109,7 +121,7 @@ nav .menu-links li a {
 
   color: var(--white);
 
-  font-size: 2rem;
+  font-size: 2.4rem;
 
   cursor: pointer;
 
@@ -117,7 +129,7 @@ nav .menu-links li a {
 }
 
 nav .menu-links .close-menu {
-  font-size: 2rem;
+  font-size: 2.4rem;
 
   color: var(--white);
 
@@ -217,13 +229,13 @@ nav .menu-links .close-menu {
 }
 
 .resume-text h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 
   color: var(--green);
 }
 
 .resume-text p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   max-width: 400px;
 
@@ -239,7 +251,7 @@ nav .menu-links .close-menu {
 }
 
 .social-links {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .social-links:nth-child(1) {
@@ -312,7 +324,7 @@ nav .menu-links .close-menu {
 
   color: var(--text);
 
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 
   padding-bottom: 25px;
 }
@@ -332,13 +344,13 @@ nav .menu-links .close-menu {
   width: 80%;
   max-width: 1200px;
 
-  margin: 40px auto;
+  margin: 0 auto 40px;
 }
 
 .my-projects {
   display: grid;
-  grid-template-columns: repeat(3, 372px);
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 372px));
+  grid-gap: 20px;
 
   justify-content: center;
   align-items: center;
@@ -354,10 +366,13 @@ nav .menu-links .close-menu {
   display: flex;
   flex-direction: column;
 
-  height: 464px;
-  width: 380px;
-
   box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+
+  z-index: 0;
 }
 
 .project-card .title-container {
@@ -373,6 +388,8 @@ nav .menu-links .close-menu {
   align-items: center;
 
   color: var(--white);
+
+  font-size: 2.2rem;
 }
 
 .project-card .project-info {
@@ -390,9 +407,11 @@ nav .menu-links .close-menu {
 .project-card .project-info .project-resume {
   color: var(--text);
 
-  text-align: justify;
+  text-align: start;
 
   margin: 15px 0;
+
+  font-size: 1.6rem;
 }
 
 .project-card .project-info .project-resume strong {
@@ -435,7 +454,7 @@ nav .menu-links .close-menu {
 
   justify-content: flex-end;
 
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .more-projects small a {
@@ -455,13 +474,13 @@ nav .menu-links .close-menu {
 }
 
 .project-card .used-techs i {
-  font-size: 24px;
+  font-size: 2.4rem;
 
   margin-right: 10px;
 }
 
 .project-card .used-techs i:last-child {
-  font-size: 24px;
+  font-size: 2.4rem;
 
   margin-right: 0px;
 }
@@ -487,7 +506,7 @@ nav .menu-links .close-menu {
 }
 
 .button-icon {
-  font-size: 16px;
+  font-size: 1.8rem;
 
   margin-right: 8px;
 

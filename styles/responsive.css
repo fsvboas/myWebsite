@@ -1,3 +1,15 @@
+@media screen and (max-width: 1461px) {
+  .more-projects {
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .resume {
     max-width: 800px;
@@ -73,8 +85,6 @@
   }
 
   .resume-text p {
-    font-size: 1.3rem;
-
     text-align: center;
   }
 
@@ -88,11 +98,6 @@
 
   .skills-image_react {
     width: 110px;
-  }
-
-  .knowledge h2,
-  .interests h2 {
-    font-size: 1.2rem;
   }
 }
 
@@ -118,10 +123,6 @@
   .interests h2 {
     margin-right: 0;
   }
-
-  .about-text p {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -138,27 +139,11 @@
     max-width: 300px;
   }
 
-  .resume-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .resume-text p {
-    font-size: 1.1rem;
-  }
-
-  .social-links {
-    font-size: 35px;
-  }
-
   .skills {
     display: flex;
     flex-direction: column;
 
     max-width: 300px;
-  }
-
-  .about-text p {
-    font-size: 0.9rem;
   }
 
   .knowledge,

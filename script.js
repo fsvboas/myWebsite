@@ -21,7 +21,7 @@ const highlightMenu = () => {
         aboutMe.classList.remove("highlight");
         Projects.classList.remove("highlight");
         return
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 1300) {
         aboutMe.classList.add("highlight");
         Home.classList.remove("highlight");
         Projects.classList.remove("highlight");
