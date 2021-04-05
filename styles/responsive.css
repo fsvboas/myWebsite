@@ -10,18 +10,6 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .resume {
-    max-width: 800px;
-  }
-
-  .skills,
-  .about-container,
-  .projects-container {
-    max-width: 800px;
-  }
-}
-
 @media screen and (max-width: 800px) {
   nav .menu-links {
     height: 30vh;
@@ -63,12 +51,8 @@
     display: block;
   }
 
-  .resume,
-  .skills,
-  .about-container {
+  .resume {
     flex-direction: column;
-
-    max-width: 500px;
   }
 
   .resume-text {
@@ -76,8 +60,6 @@
     margin-left: 0;
 
     align-items: center;
-
-    max-width: 500px;
   }
 
   .resume-text h1 {
@@ -102,12 +84,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .resume,
-  .skills,
-  .about-container {
-    max-width: 400px;
-  }
-
   .logo {
     margin-top: 0px;
   }
@@ -115,8 +91,6 @@
   .knowledge,
   .interests {
     flex-direction: column;
-
-    margin: 40px auto;
   }
 
   .knowledge h2,
@@ -125,37 +99,9 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .resume,
-  .skills,
-  .about-container {
-    max-width: 350px;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  .resume,
-  .about-container {
-    max-width: 300px;
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-
-    max-width: 300px;
-  }
-
   .knowledge,
   .interests {
     margin: 20px auto;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .resume,
-  .skills,
-  .about-container {
-    max-width: 280px;
   }
 }

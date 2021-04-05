@@ -202,20 +202,34 @@ nav .menu-links .close-menu {
 }
 
 /* PROFILE SECTION */
+#home {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  max-width: 1200px;
+
+  margin: 115px auto 0;
+}
+
+#home::after {
+  content: "";
+
+  height: 2px;
+  width: 100%;
+
+  background-color: var(--border);
+
+  display: block;
+
+  margin: 38px auto;
+}
+
 .resume {
   display: flex;
 
   align-items: center;
   justify-content: center;
-
-  width: 80%;
-  max-width: 1200px;
-
-  margin: 115px auto;
-
-  padding-bottom: 40px;
-
-  border-bottom: 1px solid var(--border);
 }
 
 .resume img {
@@ -267,13 +281,27 @@ nav .menu-links .close-menu {
 }
 
 /* SKILLS SECTION */
-.skills {
-  margin: 40px auto;
-
-  border-bottom: 1px solid var(--border);
+#skills {
+  display: flex;
+  flex-direction: column;
 
   width: 80%;
   max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+#skills::after {
+  content: "";
+
+  height: 2px;
+  width: 100%;
+
+  background-color: var(--border);
+
+  display: block;
+
+  margin: 38px auto;
 }
 
 .skills-image {
@@ -291,7 +319,7 @@ nav .menu-links .close-menu {
   align-items: center;
   justify-content: center;
 
-  margin: 80px auto;
+  margin: 40px auto;
 }
 
 .knowledge h2,
@@ -307,16 +335,27 @@ nav .menu-links .close-menu {
 }
 
 /* ABOUT ME SECTION */
-.about-container {
+#about-me {
+  display: flex;
+  flex-direction: column;
+
   width: 80%;
-
-  margin: 40px auto;
-
   max-width: 1200px;
 
-  padding-bottom: 40px;
+  margin: 0 auto;
+}
 
-  border-bottom: 1px solid var(--border);
+#about-me::after {
+  content: "";
+
+  height: 2px;
+  width: 100%;
+
+  background-color: var(--border);
+
+  display: block;
+
+  margin: 38px auto;
 }
 
 .about-text p {
@@ -344,7 +383,7 @@ nav .menu-links .close-menu {
   width: 80%;
   max-width: 1200px;
 
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 
 .my-projects {
