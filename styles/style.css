@@ -22,6 +22,7 @@ html {
   --switch: #eaedef;
   --project-background: #ffffff;
   --project-image-border: #eaedef;
+  --curriculum-button: #5965e0;
 
   --white: #ffffff;
   --green: #4cd62b;
@@ -36,6 +37,7 @@ html {
   --switch: #202020;
   --project-background: #202020;
   --project-image-border: #101010;
+  --curriculum-button: #000000;
 }
 
 body {
@@ -256,28 +258,27 @@ nav .menu-links .close-menu {
   color: var(--text);
 }
 
-.links {
-  display: flex;
-
-  align-items: center;
-
-  margin: 10px auto;
+.curriculum {
+  margin-top: 15px;
 }
 
-.social-links {
-  font-size: 4rem;
+.curriculum-button {
+  padding: 10px;
+
+  border: none;
+  border-radius: 4px;
+
+  outline: none;
+
+  background-color: var(--curriculum-button);
+
+  color: var(--white);
+
+  font-size: 1.4rem;
 }
 
-.social-links:nth-child(1) {
-  margin-right: 20px;
-}
-
-.fa-github {
-  color: var(--text);
-}
-
-.fa-linkedin {
-  color: #0a66c2;
+.curriculum-button i {
+  margin-right: 4px;
 }
 
 /* SKILLS SECTION */

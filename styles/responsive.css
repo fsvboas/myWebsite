@@ -70,7 +70,9 @@
     text-align: center;
   }
 
-  .links {
+  .curriculum {
+    display: flex;
+
     justify-content: center;
   }
 
