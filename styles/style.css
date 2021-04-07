@@ -278,7 +278,7 @@ nav .menu-links .close-menu {
 }
 
 .curriculum-button i {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 /* SKILLS SECTION */
@@ -389,7 +389,7 @@ nav .menu-links .close-menu {
 
 .my-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 372px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 386px));
   grid-gap: 20px;
 
   justify-content: center;
@@ -483,6 +483,8 @@ nav .menu-links .close-menu {
 
   outline: none;
 
+  font-size: 1.4rem;
+
   /* display: flex;
 
   align-items: center;
@@ -494,7 +496,7 @@ nav .menu-links .close-menu {
 
   justify-content: flex-end;
 
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .more-projects small a {
@@ -546,8 +548,6 @@ nav .menu-links .close-menu {
 }
 
 .button-icon {
-  font-size: 1.8rem;
-
   margin-right: 8px;
 
   color: var(--white);
