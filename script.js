@@ -16,23 +16,23 @@ const highlightMenu = () => {
 
     let scrollPos = window.scrollY;
 
-    if (window.innerWidth > 960 && scrollPos < 600) {
+    if (window.innerWidth > 800 && scrollPos < 600) {
         Home.classList.add("highlight");
         aboutMe.classList.remove("highlight");
         Projects.classList.remove("highlight");
         return
-    } else if (window.innerWidth > 960 && scrollPos < 1300) {
+    } else if (window.innerWidth > 800 && scrollPos < 1300) {
         aboutMe.classList.add("highlight");
         Home.classList.remove("highlight");
         Projects.classList.remove("highlight");
         return
-    } else if (window.innerWidth > 960 && scrollPos < 2000) {
+    } else if (window.innerWidth > 800 && scrollPos < 2000) {
         Projects.classList.add("highlight");
         aboutMe.classList.remove("highlight");
         Home.classList.remove("highlight");
         return
     }
-    if ((Highlight && window.innerWidth <= 960 && scrollPos < 600) || Highlight) {
+    if ((Highlight && window.innerWidth <= 800 && scrollPos < 600) || Highlight) {
         Highlight.classList.remove('highlight');
     }
 };
