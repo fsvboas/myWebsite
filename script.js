@@ -11,25 +11,17 @@ checkbox.addEventListener("change", darkMode);
 const highlightMenu = () => {
     const Highlight = document.querySelector(".highlight");
     const Home = document.querySelector("#home-page");
-    const aboutMe = document.querySelector("#about");
     const Projects = document.querySelector("#portfolio");
 
     let scrollPos = window.scrollY;
 
     if (window.innerWidth > 800 && scrollPos < 600) {
         Home.classList.add("highlight");
-        aboutMe.classList.remove("highlight");
         Projects.classList.remove("highlight");
         return
     } else if (window.innerWidth > 800 && scrollPos < 1300) {
-        aboutMe.classList.add("highlight");
         Home.classList.remove("highlight");
-        Projects.classList.remove("highlight");
-        return
-    } else if (window.innerWidth > 800 && scrollPos < 2000) {
         Projects.classList.add("highlight");
-        aboutMe.classList.remove("highlight");
-        Home.classList.remove("highlight");
         return
     }
     if ((Highlight && window.innerWidth <= 800 && scrollPos < 600) || Highlight) {
@@ -46,7 +38,6 @@ const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 
 const Home = document.querySelector("#home-page");
-const aboutMe = document.querySelector("#about");
 const Projects = document.querySelector("#portfolio");
 
 function open() {
@@ -62,11 +53,10 @@ openMenu.addEventListener("click", open);
 closeMenu.addEventListener("click", close);
 
 Home.addEventListener("click", close);
-aboutMe.addEventListener("click", close);
 Projects.addEventListener("click", close);
 
 //Project Cards
-const projectCards = document.querySelector("div.my-projects");
+const projectCards = document.querySelector("div.projects");
 const card = document.querySelector("div.project-card");
 const newCards = [
     {

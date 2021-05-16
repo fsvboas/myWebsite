@@ -277,64 +277,12 @@ nav .menu-links .close-menu {
   color: var(--white);
 
   font-size: 1.4rem;
+
+  cursor: pointer;
 }
 
 .curriculum-button i {
   margin-right: 8px;
-}
-
-/* SKILLS SECTION */
-#skills {
-  display: flex;
-  flex-direction: column;
-
-  width: 80%;
-  max-width: 1200px;
-
-  margin: 0 auto;
-}
-
-#skills::after {
-  content: "";
-
-  height: 2px;
-  width: 100%;
-
-  background-color: var(--border);
-
-  display: block;
-
-  margin: 38px auto;
-}
-
-.skills-image {
-  width: 100px;
-}
-
-.skills-image_react {
-  width: 150px;
-}
-
-.knowledge,
-.interests {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  margin: 40px auto;
-}
-
-.knowledge h2,
-.interests h2 {
-  margin-right: 20px;
-
-  color: var(--text);
-}
-
-.knowledge .skills-image,
-.interests .skills-image {
-  margin: 15px;
 }
 
 /* ABOUT ME SECTION */
@@ -381,6 +329,14 @@ nav .menu-links .close-menu {
   text-decoration: underline;
 }
 
+.about-text .my-links {
+  text-decoration: underline;
+
+  color: var(--green);
+
+  font-weight: 600;
+}
+
 /* MY PROJECTS SECTION */
 .projects-container {
   width: 80%;
@@ -389,7 +345,7 @@ nav .menu-links .close-menu {
   margin: 0 auto;
 }
 
-.my-projects {
+.projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 386px));
   grid-gap: 20px;
